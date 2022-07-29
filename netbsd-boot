@@ -1,0 +1,8 @@
+load -r /opt/homebrew/Cellar/simh/3.12.2/share/simh/vax/ka655x.bin
+set cpu 64m
+set rq0 ra92
+at rq0 netbsd.dsk
+set rq1 cdrom
+at rq1 NetBSD-9.2-vax.iso
+at xq0 en0
+boot cpu
